@@ -1,0 +1,54 @@
+<include file="Public:head" />
+<body id="con">
+<!-- nav -->
+<include file="Public:nav" />
+<!-- /nav -->
+<section id="content">
+	<div class="wrapper">
+    	<div class="contentbar">
+    	<!-- navall -->
+    	<include file="Public:navall" />
+    	<!-- /navall -->
+        	<form name="formsearch"   method="post"  action="__APP__/Search/result" id="search">
+        		<input type="hidden" name="kwtype" value="0" />
+				<input type="text" name="keywords" id="keywords" autocomplete="off" value="在这里搜索..." required x-webkit-speech x-webkit-grammar="builtin:translate" lang="zh-CN"  />
+				<input type="submit" id="submit" value="搜 索" />
+        	</form>        	
+    		<div class="clear"></div>
+        	<article>
+            	<h1 id="title"><{$v.news_title}><br />
+            	<span>
+            	点击数：<{$v.news_hits}> &nbsp;&nbsp; 作者：<{$v.news_author}>  &nbsp;&nbsp; 时间：<{$v.news_addtime|date='Y-m-d H:i:s',###}>
+            	</span>
+            	</h1>
+
+            	
+                <div id="info"><{$v.news_content}></div>
+            </article>
+      </div>
+      <div class="sidebar">
+        	<h3 class="cat_title">您可能感兴趣的！</h3>
+          	<volist name='vlist' id='v'>
+            <h5><a href="<{$v.url}>" ><{$v.news_title}></a></h5>
+            </volist>
+      </div>
+      <div class="clear"></div>
+  </div>
+</section>
+
+<include file="Public:foot" />
+<script>
+//<![CDATA[
+		$("#keywords").focusin(function() {
+		  $(this).val()=="在这里搜索..."?$(this).val(""):false;
+		});
+		$("#keywords").focusout(function() {
+			$(this).val($(this).val());
+			$(this).val()==""?$(this).val("在这里搜索..."):false;
+		});
+		$("#info img").lazyload({effect:"fadeIn",failurelimit:10});
+
+//]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,1496 @@
+[ 2016-02-18T11:53:00+08:00 ] ::1 /eplus/index.php/manage/page/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Page/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 3 ORDER BY column_sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_page` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_page` WHERE `page_del` = 0  [ RunTime:0.0020s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='78' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='72' ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='72' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='78' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='78' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_page` WHERE `page_del` = 0 ORDER BY page_addtime desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='78' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='78' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='78' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='72' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='72' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\8262c25dcc23276582d2175080032d7b.php 第 67 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\8262c25dcc23276582d2175080032d7b.php 第 67 行.
+NOTIC: [8] Undefined variable: keyword E:\www\eplus\App\Runtime\Cache\Manage\8262c25dcc23276582d2175080032d7b.php 第 73 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T11:53:09+08:00 ] ::1 /eplus/index.php/manage/page/edit/id/106
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Page/edit' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0130s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0130s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_page` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_page` WHERE `id` = 106 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0100s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='78' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 3 ORDER BY column_sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T12:02:02+08:00 ] ::1 /eplus/index.php/manage/trash/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Trash/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL:  select a.*,b.column_name from 
+        				(
+        				select id,column_id,news_title title,news_deltime deltime,'News' model 
+                       from ep_news where news_del='1'
+                       union
+                       select id,column_id,product_name title,product_deltime deltime,'Product' model 
+                       from ep_product where product_del='1' 
+                       union
+                       select id,column_id,page_title title,page_deltime deltime,'Page' model 
+                       from ep_page where page_del='1' 
+                       union
+                       select id,column_id,download_title title,download_deltime deltime,'Download' model 
+                       from ep_download where download_del='1' 
+                       union
+                       select id,column_id,message_title title,message_deltime deltime,'Message' model 
+                       from ep_message where message_del='1' 
+                       )  a
+                       left join ep_column b
+                       on a.column_id  = b.id
+                       order by a.deltime desc [ RunTime:0.0610s ]
+SQL:  select a.*,b.column_name from 
+        				(
+        				select id,column_id,news_title title,news_deltime deltime,'News' model 
+                       from ep_news where news_del='1'
+                       union
+                       select id,column_id,product_name title,product_deltime deltime,'Product' model 
+                       from ep_product where product_del='1' 
+                       union
+                       select id,column_id,page_title title,page_deltime deltime,'Page' model 
+                       from ep_page where page_del='1' 
+                       union
+                       select id,column_id,download_title title,download_deltime deltime,'Download' model 
+                       from ep_download where download_del='1' 
+                       union
+                       select id,column_id,message_title title,message_deltime deltime,'Message' model 
+                       from ep_message where message_del='1' 
+                       )  a
+                       left join ep_column b
+                       on a.column_id  = b.id
+                       order by a.deltime desc limit 0,15 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T12:02:05+08:00 ] ::1 /eplus/index.php/manage/news/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 1 ORDER BY column_sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_news` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_news` WHERE `news_del` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_attr` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='94' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='95' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='96' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='100' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='101' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='104' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='99' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_news` WHERE `news_del` = 0 ORDER BY news_sort,news_addtime desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='104' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='101' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='100' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='99' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='96' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='95' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='94' AND a.model_id='1' [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0000s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 67 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 67 行.
+NOTIC: [8] Undefined variable: keyword E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T12:02:10+08:00 ] ::1 /eplus/index.php/manage/news/do_trash/id/104
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/do_trash' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0110s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_news` [ RunTime:0.0090s ]
+SQL: UPDATE `ep_news` SET `news_del`='1',`news_deltime`='1455768130' WHERE ( id=104 ) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T12:02:11+08:00 ] ::1 /eplus/index.php/manage/news/do_trash/id/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/do_trash' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_news` [ RunTime:0.0100s ]
+ERR: 1054:Unknown column 'css' in 'where clause'
+ [ SQL语句 ] : UPDATE `ep_news` SET `news_del`='1',`news_deltime`='1455768131' WHERE ( id=css )
+ERR: 1054:Unknown column 'css' in 'where clause'
+ [ SQL语句 ] : UPDATE `ep_news` SET `news_del`='1',`news_deltime`='1455768131' WHERE ( id=css )
+
+[ 2016-02-18T12:02:14+08:00 ] ::1 /eplus/index.php/manage/news/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 1 ORDER BY column_sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_news` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_news` WHERE `news_del` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_attr` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='94' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='95' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='96' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='100' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='101' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='99' AND a.model_id='1' [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ep_news` WHERE `news_del` = 0 ORDER BY news_sort,news_addtime desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='101' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='100' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='99' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='96' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='95' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='94' AND a.model_id='1' [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 67 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 67 行.
+NOTIC: [8] Undefined variable: keyword E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T12:28:28+08:00 ] ::1 /eplus/index.php/manage/trash/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Trash/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0110s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL:  select a.*,b.column_name from 
+        				(
+        				select id,column_id,news_title title,news_deltime deltime,'News' model 
+                       from ep_news where news_del='1'
+                       union
+                       select id,column_id,product_name title,product_deltime deltime,'Product' model 
+                       from ep_product where product_del='1' 
+                       union
+                       select id,column_id,page_title title,page_deltime deltime,'Page' model 
+                       from ep_page where page_del='1' 
+                       union
+                       select id,column_id,download_title title,download_deltime deltime,'Download' model 
+                       from ep_download where download_del='1' 
+                       union
+                       select id,column_id,message_title title,message_deltime deltime,'Message' model 
+                       from ep_message where message_del='1' 
+                       )  a
+                       left join ep_column b
+                       on a.column_id  = b.id
+                       order by a.deltime desc [ RunTime:0.0670s ]
+SQL:  select a.*,b.column_name from 
+        				(
+        				select id,column_id,news_title title,news_deltime deltime,'News' model 
+                       from ep_news where news_del='1'
+                       union
+                       select id,column_id,product_name title,product_deltime deltime,'Product' model 
+                       from ep_product where product_del='1' 
+                       union
+                       select id,column_id,page_title title,page_deltime deltime,'Page' model 
+                       from ep_page where page_del='1' 
+                       union
+                       select id,column_id,download_title title,download_deltime deltime,'Download' model 
+                       from ep_download where download_del='1' 
+                       union
+                       select id,column_id,message_title title,message_deltime deltime,'Message' model 
+                       from ep_message where message_del='1' 
+                       )  a
+                       left join ep_column b
+                       on a.column_id  = b.id
+                       order by a.deltime desc limit 0,15 [ RunTime:0.0020s ]
+
+[ 2016-02-18T12:28:43+08:00 ] ::1 /eplus/index.php/manage/trash/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Trash/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL:  select a.*,b.column_name from 
+        				(
+        				select id,column_id,news_title title,news_deltime deltime,'News' model 
+                       from ep_news where news_del='1'
+                       union
+                       select id,column_id,product_name title,product_deltime deltime,'Product' model 
+                       from ep_product where product_del='1' 
+                       union
+                       select id,column_id,page_title title,page_deltime deltime,'Page' model 
+                       from ep_page where page_del='1' 
+                       union
+                       select id,column_id,download_title title,download_deltime deltime,'Download' model 
+                       from ep_download where download_del='1' 
+                       union
+                       select id,column_id,message_title title,message_deltime deltime,'Message' model 
+                       from ep_message where message_del='1' 
+                       )  a
+                       left join ep_column b
+                       on a.column_id  = b.id
+                       order by a.deltime desc [ RunTime:0.0020s ]
+SQL:  select a.*,b.column_name from 
+        				(
+        				select id,column_id,news_title title,news_deltime deltime,'News' model 
+                       from ep_news where news_del='1'
+                       union
+                       select id,column_id,product_name title,product_deltime deltime,'Product' model 
+                       from ep_product where product_del='1' 
+                       union
+                       select id,column_id,page_title title,page_deltime deltime,'Page' model 
+                       from ep_page where page_del='1' 
+                       union
+                       select id,column_id,download_title title,download_deltime deltime,'Download' model 
+                       from ep_download where download_del='1' 
+                       union
+                       select id,column_id,message_title title,message_deltime deltime,'Message' model 
+                       from ep_message where message_del='1' 
+                       )  a
+                       left join ep_column b
+                       on a.column_id  = b.id
+                       order by a.deltime desc limit 0,15 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0000s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-02-18T14:06:34+08:00 ] ::1 /eplus/manage/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webname' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.222070s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.222070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T14:06:35+08:00 ] ::1 /eplus/index.php/Manage/Verify/code?w=230&h=32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T14:06:37+08:00 ] ::1 /eplus/index.php/Manage/Verify/code?w=230&h=32?undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 119 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 256 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 207 行.
+NOTIC: [8] A non well formed numeric value encountered E:\www\eplus\Core\Library\Think\Verify.class.php 第 227 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T14:06:41+08:00 ] ::1 /eplus/index.php/manage/login/do_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`admin_name`,`admin_date`,`admin_ip`,`admin_lock`,`admin_auth` FROM `ep_admin` WHERE `admin_name` = 'admin' AND `admin_pass` = 'b13dc76c70b8c3ebe6fd5390b478f00d' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\www\eplus\App\Manage\Controller\LoginController.class.php 第 44 行.
+SQL: UPDATE `ep_admin` SET `admin_date`='1455775601',`admin_ip`='0.0.0.0',`admin_login`=admin_login+1,`admin_olddate`='1455761992',`admin_oldip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0470s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-18T14:06:42+08:00 ] ::1 /eplus/index.php/manage/login/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:css
+
+[ 2016-02-18T14:06:44+08:00 ] ::1 /eplus/index.php/manage/main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Main/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0100s ]
+SQL: SELECT a.id,a.admin_name,a.admin_realname,a.admin_pic,c.title FROM ep_admin a left join ep_auth_group_access b on a.id = b.uid left join ep_auth_group c on c.id = b.group_id   WHERE a.id = '1' LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-02-18T14:06:45+08:00 ] ::1 /eplus/index.php/manage/main/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Main/home' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0100s ]
+SQL: SELECT * FROM ep_admin a WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title E:\www\eplus\App\Manage\Controller\MainController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T14:07:00+08:00 ] ::1 /eplus/index.php/manage/product/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Product/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 2 ORDER BY column_sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_product` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ep_product` WHERE `product_del` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='77' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='77' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='77' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: news_title E:\www\eplus\App\Manage\Controller\ProductController.class.php 第 37 行.
+NOTIC: [8] Undefined index: news_title E:\www\eplus\App\Manage\Controller\ProductController.class.php 第 37 行.
+NOTIC: [8] Undefined index: news_title E:\www\eplus\App\Manage\Controller\ProductController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\942835381d391d88d201776040d93ee9.php 第 63 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\942835381d391d88d201776040d93ee9.php 第 63 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\942835381d391d88d201776040d93ee9.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-02-18T14:07:06+08:00 ] ::1 /eplus/index.php/manage/product/do_trash/id/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Product/do_trash' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_product` [ RunTime:0.0140s ]
+SQL: UPDATE `ep_product` SET `product_del`='1',`product_deltime`='1455775626' WHERE ( id=14 ) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T14:07:07+08:00 ] ::1 /eplus/index.php/manage/product/do_trash/id/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Product/do_trash' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_product` [ RunTime:0.0110s ]
+ERR: 1054:Unknown column 'css' in 'where clause'
+ [ SQL语句 ] : UPDATE `ep_product` SET `product_del`='1',`product_deltime`='1455775627' WHERE ( id=css )
+ERR: 1054:Unknown column 'css' in 'where clause'
+ [ SQL语句 ] : UPDATE `ep_product` SET `product_del`='1',`product_deltime`='1455775627' WHERE ( id=css )
+
+[ 2016-02-18T14:07:09+08:00 ] ::1 /eplus/index.php/manage/product/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Product/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0120s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 2 ORDER BY column_sort ASC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_product` WHERE `product_del` = 0  [ RunTime:0.0020s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='77' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='77' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: news_title E:\www\eplus\App\Manage\Controller\ProductController.class.php 第 37 行.
+NOTIC: [8] Undefined index: news_title E:\www\eplus\App\Manage\Controller\ProductController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\942835381d391d88d201776040d93ee9.php 第 63 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\942835381d391d88d201776040d93ee9.php 第 63 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\942835381d391d88d201776040d93ee9.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T14:07:13+08:00 ] ::1 /eplus/index.php/manage/product/edit/id/13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Product/edit' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_product` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_product` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0100s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='77' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 2 ORDER BY column_sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T16:40:10+08:00 ] ::1 /eplus/index.php/manage/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webname' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.125065s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.125065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-02-18T16:40:11+08:00 ] ::1 /eplus/index.php/Manage/Verify/code?w=230&h=32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T16:40:17+08:00 ] ::1 /eplus/index.php/manage/login/do_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0690s ]
+SQL: SELECT `id`,`admin_name`,`admin_date`,`admin_ip`,`admin_lock`,`admin_auth` FROM `ep_admin` WHERE `admin_name` = 'admin' AND `admin_pass` = 'b13dc76c70b8c3ebe6fd5390b478f00d' LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\www\eplus\App\Manage\Controller\LoginController.class.php 第 44 行.
+SQL: UPDATE `ep_admin` SET `admin_date`='1455784816',`admin_ip`='0.0.0.0',`admin_login`=admin_login+1,`admin_olddate`='1455775601',`admin_oldip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.2050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T16:40:17+08:00 ] ::1 /eplus/index.php/manage/login/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 非法操作:css
+
+[ 2016-02-18T16:40:19+08:00 ] ::1 /eplus/index.php/manage/main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0630s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Main/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0090s ]
+SQL: SELECT a.id,a.admin_name,a.admin_realname,a.admin_pic,c.title FROM ep_admin a left join ep_auth_group_access b on a.id = b.uid left join ep_auth_group c on c.id = b.group_id   WHERE a.id = '1' LIMIT 1   [ RunTime:0.1720s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0380s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-02-18T16:40:21+08:00 ] ::1 /eplus/index.php/manage/main/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Main/home' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0110s ]
+SQL: SELECT * FROM ep_admin a WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title E:\www\eplus\App\Manage\Controller\MainController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T16:40:22+08:00 ] ::1 /eplus/index.php/manage/main/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T16:40:50+08:00 ] ::1 /eplus/index.php/manage/admin/photo.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Admin/photo' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ep_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0220s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T16:42:10+08:00 ] ::1 /eplus/index.php/manage/admin/do_photo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Admin/do_photo' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: size E:\www\eplus\App\Common\Common\function.php 第 329 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\www\eplus\Core\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0090s ]
+SQL: UPDATE `ep_admin` SET `admin_pic`='/eplus/Uploads/Images/20160218/56c583e21946a.png' WHERE `id` = 1 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T16:42:11+08:00 ] ::1 /eplus/index.php/manage/admin/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Admin/css' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:css
+
+[ 2016-02-18T16:42:13+08:00 ] ::1 /eplus/index.php/manage/admin/photo.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Admin/photo' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `ep_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T16:42:14+08:00 ] ::1 /eplus/index.php/manage/admin/photo.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Admin/photo' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_admin` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-02-18T16:42:20+08:00 ] ::1 /eplus/index.php/manage/main/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Main/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0110s ]
+SQL: SELECT a.id,a.admin_name,a.admin_realname,a.admin_pic,c.title FROM ep_admin a left join ep_auth_group_access b on a.id = b.uid left join ep_auth_group c on c.id = b.group_id   WHERE a.id = '1' LIMIT 1   [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0010s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T16:42:21+08:00 ] ::1 /eplus/index.php/manage/main/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/Main/home' AND `status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ep_admin` [ RunTime:0.0110s ]
+SQL: SELECT * FROM ep_admin a WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: title E:\www\eplus\App\Manage\Controller\MainController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0050s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T16:51:05+08:00 ] ::1 /eplus/index.php/manage/news/index.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0450s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0400s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0690s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 1 ORDER BY column_sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_news` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `ep_news` WHERE `news_del` = 0  [ RunTime:0.0240s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_attr` [ RunTime:0.0260s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='94' AND a.model_id='1' [ RunTime:0.0120s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='95' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='96' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='100' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='101' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='99' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_news` WHERE `news_del` = 0 ORDER BY news_sort,news_addtime desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='101' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='100' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='99' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='96' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='95' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='94' AND a.model_id='1' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0020s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 67 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 67 行.
+NOTIC: [8] Undefined variable: keyword E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.031002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2016-02-18T16:51:40+08:00 ] ::1 /eplus/index.php/manage/news/edit/id/97
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/edit' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0100s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0340s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `ep_news` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `ep_news` WHERE `id` = 97 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0090s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_attr` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 1 ORDER BY column_sort ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_news` WHERE `id` = 97 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_attr` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `ep_attr` WHERE `model_id` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0020s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-02-18T16:51:51+08:00 ] ::1 /eplus/index.php/manage/news/do_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/do_edit' AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_news` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: validate E:\www\eplus\Core\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\www\eplus\Core\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `ep_news` SET `column_id`='73',`news_title`='海南首家专业众筹平台上线 省残基会众筹助残公益项目',`news_author`='admin',`news_sort`='100',`news_hits`='27',`news_keywords`='',`news_description`='',`external_links`='',`news_content`='&lt;p style=&quot;box-sizing: border-box; margin: 20px 35px 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 宋体; line-height: 28px; font-size: 14px; color: rgb(67, 67, 67); white-space: normal; word-spacing: 1px; background-color: rgb(255, 255, 255);&quot;&gt;“大众创业，万众创新”。今天（1月10日），“海南合观众筹(&lt;a href=&quot;http://www.hgzc8.com/&quot; style=&quot;box-sizing: border-box; transition: 0.3s; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 0, 0); text-decoration: none;&quot;&gt;www.hgzc8.com&lt;/a&gt;)”正式上线。海南省残疾人基金会借助该平台，首次以众筹方式募集资金，助推海南残疾人公益事业发展。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin: 15px 35px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 宋体; line-height: 28px; font-size: 14px; color: rgb(67, 67, 67); white-space: normal; word-spacing: 1px; background-color: rgb(255, 255, 255);&quot;&gt;　　据悉，“海南合观众筹”项目主要由北京合观投资管理有限公司控股，借助北京合观投资在股权投融资、债权投融资、并购重组和基金管理方面的丰富经验及较高专业水准，立足海南，搭建海南首家专业众筹平台(&lt;a href=&quot;http://www.hgzc8.com/&quot; style=&quot;box-sizing: border-box; transition: 0.3s; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; color: rgb(0, 0, 0); text-decoration: none;&quot;&gt;www.hgzc8.com&lt;/a&gt;)。并通过专业团队指导包装，运用公益、消费及股权等众筹合作模式，助力海南公益事业，中小微企业和优势产业快速提升发展。实现金融与其他行业共生共荣，为海南未来经济发展贡献智慧和力量。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin: 15px 35px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 宋体; line-height: 28px; font-size: 14px; color: rgb(67, 67, 67); white-space: normal; word-spacing: 1px; background-color: rgb(255, 255, 255);&quot;&gt;　　今天，海南省残疾人基金会与“海南合观众筹”签订合作协议。首次以众筹方式设立海南省残疾人基金。由合观众筹免费为该基金项目提供平台服务，通过第三方托管平台安全透明化管理，全面助力海南残疾人公益事业。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin: 15px 35px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 宋体; line-height: 28px; font-size: 14px; color: rgb(67, 67, 67); white-space: normal; word-spacing: 1px; background-color: rgb(255, 255, 255);&quot;&gt;　　此外，首批上线项目也正式亮相，其中救助白内障患者公益众筹、牛大力、澄迈特产龙吉贡米消费众筹及爱哪哪股权众筹等多个项目在现场进行了路演。海南慧济健康管理有限公司现场认筹救治10例白内障老人，帮助他们重见光明;黑马会海口分会也现场认筹捐赠5000元爱心基金，让更多需要帮助的人感受到关爱与温暖。&lt;/p&gt;&lt;p style=&quot;box-sizing: border-box; margin: 15px 35px; padding: 0px; border: 0px; outline: 0px; vertical-align: baseline; font-family: 宋体; line-height: 28px; font-size: 14px; color: rgb(67, 67, 67); white-space: normal; word-spacing: 1px; background-color: rgb(255, 255, 255);&quot;&gt;　　本次活动由海南省残疾人联合会、海南合观众筹网络科技有限公司主办。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`news_updatetime`='1455785511' WHERE `id` = '97' [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `ep_attr_relevance` [ RunTime:0.0090s ]
+SQL: DELETE FROM `ep_attr_relevance` WHERE `relevance_id` = 97 AND `model_id` = 1 [ RunTime:0.0610s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\www\eplus\App\Manage\Controller\NewsController.class.php 第 238 行.
+NOTIC: [8] Undefined variable: data E:\www\eplus\App\Manage\Controller\NewsController.class.php 第 241 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-02-18T16:51:53+08:00 ] ::1 /eplus/index.php/manage/news/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/css' AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:css
+
+[ 2016-02-18T16:51:55+08:00 ] ::1 /eplus/index.php/manage/news/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_auth_rule` WHERE `name` = 'Manage/News/index' AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_group_access` [ RunTime:0.0090s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM ep_auth_group_access a INNER JOIN ep_auth_group g on a.group_id=g.id  WHERE ( a.uid='1' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ep_auth_rule` [ RunTime:0.0100s ]
+SQL: SELECT `condition`,`name` FROM `ep_auth_rule` WHERE `id` IN ('20','21','22','23','24','1','12','13','19','25','26','27','28','41','42','43','44','14','15','16','17','18','45','46','29','30','31','32','37','38','39','40','33','34','35','36','47','48','49') AND `type` = 1 AND `status` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ep_column` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_column` WHERE `model_id` = 1 ORDER BY column_sort ASC  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_news` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `ep_news` WHERE `news_del` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ep_attr` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='94' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='95' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='96' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='100' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='101' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='99' AND a.model_id='1' [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ep_news` WHERE `news_del` = 0 ORDER BY news_sort,news_addtime desc LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='101' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='100' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='75' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='99' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='97' AND a.model_id='1' [ RunTime:0.0000s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='96' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='95' AND a.model_id='1' [ RunTime:0.0010s ]
+SQL: SELECT `column_name` FROM `ep_column` WHERE ( 1=1 AND id='73' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: mapping_order E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit E:\www\eplus\Core\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM ep_attr_relevance AS a, ep_attr AS b WHERE a.attr_id = b.id AND a. relevance_id='94' AND a.model_id='1' [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `ep_config` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'webtitle' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'keywords' AND `config_lock` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ep_config` WHERE `config_name` = 'description' AND `config_lock` = 0  [ RunTime:0.0020s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 67 行.
+NOTIC: [8] Undefined variable: selColumn E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 67 行.
+NOTIC: [8] Undefined variable: keyword E:\www\eplus\App\Runtime\Cache\Manage\81647aa1c7f93c5ec583af46652b36d2.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T16:56:41+08:00 ] ::1 /eplus/index.php/manage/admin/photo.html?v=4.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-18T16:56:41+08:00 ] ::1 /eplus/index.php/manage/admin/css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+

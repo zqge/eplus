@@ -1,0 +1,143 @@
+<include file="Public:header" />
+<include file="Public:editor" /> <!-- 编辑器 -->
+<!-- 头部结束 -->
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>添加单页</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post"  id="form1" action="<{:U('Page/do_add')}>"  class="form-horizontal m-t" enctype="multipart/form-data">
+						<div class="form-group">
+                                <label class="col-sm-2 control-label">所属栏目:</label>
+                                <div class="col-sm-5">
+                                    <select class="form-control m-b" name="column_id">
+                                <option value="" >==请选择分类==</option>
+                             	<volist name='cate' id='v'>
+							<option value="<{$v.id}>" ><{$v.html}><{$v.column_name}></option>
+								</volist>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label ">标题 ：</label><span id="valierr" style="color:#FF9966">*</span>
+                                <div class="col-sm-5">
+                                    <input placeholder="请输入文章标题" id="page_title" name="page_title" class="form-control" type="text" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">图片：</label>
+                                <div class="col-sm-5">
+                                <input type="file" class="form-control" id="page_pic"  name="page_pic">
+                                </div>
+                            </div>
+                             <div class="form-group"  style="display:none" id="showImg">
+                                 <div class="col-sm-6 col-md-3 col-sm-offset-2">
+      								<a href="#" class="thumbnail">
+         								<img src="" id="page_img"  >
+     							 </a>
+  						 </div>
+                            </div>
+                              <div class="form-group">
+                                <label class="col-sm-2 control-label ">外部链接 ：</label>
+                                <div class="col-sm-5">
+                                    <input placeholder="外部链接" id="page_url" name="page_url" class="form-control" type="text" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">排序：</label>
+                                <div class="col-sm-5">
+                                    <input placeholder=" 输入数字，越小越靠前" id="page_sort"  name="page_sort"  value='100' class="form-control" type="text" >
+                                </div>
+                            </div>
+                        <div class="form-group">
+                                <label class="col-sm-2 control-label">关键字：</label>
+                                <div class="col-sm-5">
+                                    <input id="page_keywords" placeholder="多个关键字用英文逗号相隔"  name="page_keywords"  class="form-control" type="text" >
+                                </div>
+                            </div>
+                                               <div class="form-group">
+                                <label class="col-sm-2 control-label">描述：</label>
+                                <div class="col-sm-5">
+    								<textarea  placeholder="文章描述" id="page_description" name="page_description"  class="form-control" rows="3"></textarea>
+                                 <span class="help-block m-b-none"> 填写关键字与描述有利于SEO优化</span>                           
+                              
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+					       <div class="form-group">
+					                   <!--  编辑器 -->
+									<label class="col-sm-1 control-label">简介：</label>
+                                <div class="col-sm-10">					
+                                                        <script id="page_summary" name="page_summary" type="text/plain">
+        									</script>
+					                          <!--  编辑器 -->   
+							</div>
+							</div>
+	           <div class="form-group">
+					                   <!--  编辑器 -->
+									<label class="col-sm-1 control-label">内容：</label>
+                                <div class="col-sm-10">					
+                                                        <script id="page_content" name="page_content" type="text/plain">
+        									</script>
+					                          <!--  编辑器 -->   
+							</div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-3">
+                                    <button class="btn btn-primary"  id="save"  type="submit">提交</button>
+                                     <input class="btn btn-primary"  type="button" name="return" value="返回" onclick="history.go(-1)">
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  	<!-- 实例化编辑器 -->
+        <script type="text/javascript">
+        var editor1 = UE.getEditor('page_summary');
+
+        //内容编辑器
+        var editor = new UE.ui.Editor({initialFrameHeight:300});
+        editor.render("page_content");
+        
+    </script>
+   <!-- /编辑器 --> 
+</body>
+<script type="text/javascript">   
+  <!--   
+        $(document).ready(function(){  
+            var v = $("#form1").validate({   //表单验证
+                rules:{   
+            	page_title:{required:true},   
+                },messages:{   
+                	page_title:{required:"标题必须填写！"},   
+                	
+                }, submitHandler:function(form1){ 
+                	form1.submit(); 
+                	} 
+                });   
+
+            //初始化，如果有缩位图则显示缩位图
+            if($("#page_img").attr("src") != ""){
+            		    $("#showImg").show();
+                }
+
+            //显示缩位图
+            $("#page_pic").change(function(){
+            	var objUrl = getObjectURL(this.files[0]) ;
+            	if (objUrl) {
+            		$("#page_img").attr("src", objUrl) ;
+            		$("#showImg").show();
+            	}
+            }) ;
+        });
+  //-->   
+  </script>  
+</html>

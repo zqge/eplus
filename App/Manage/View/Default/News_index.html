@@ -1,0 +1,129 @@
+<include file="Public:header" />
+<!-- 头部结束 -->
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>新闻列表</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row"> 
+                         <div class="col-sm-6 ">
+                                <div class="btn-group hidden-xs" id="exampleTableEventsToolbar" role="group">
+                                    <button onclick="window.open('__URL__/add','_self')"  type="button" class="btn btn-primary">
+										添加
+                                    </button>    
+                                                                    
+                                    <button type="button" id="remove" class="btn btn-danger" >
+															删除                                 
+   									</button>
+             
+                                </div>
+                                </div>
+                                <form action="<{:U('News/index')}>"  method="post"  id="form_sel" name="form_sel">
+                                 <div class="col-sm-3 m-b-xs">
+                                <select class="input-sm form-control input-s-sm inline" name="selColumn" id="selColumn">
+                                    <option value="0">选择栏目</option>
+                                   <volist name='Column' id='v'>
+									<option value="<{$v.id}>"   <if condition="$v['id'] eq $selColumn">selected="selected"</if> >
+									<{$v.html}><{$v.column_name}></option>
+                                     </volist>
+                                </select>
+                            </div>
+                                
+                            <div class="col-sm-3">
+                                <div class="input-group">
+                                    <input type="text" placeholder="请输入关键词" class="input-sm form-control" name="keyword"  value="<{$keyword}>"> 
+                                    <span class="input-group-btn"><button type="submit" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                                </div>
+                            </div>
+                          </form>
+                            
+                        </div>                                                
+                        <div class="table-responsive">
+                        <form action="__URL__/do_trash" method="post" id="form_do" name="form_do">
+                        
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" class="i-checks"   id="checkBox" ></th>
+                                        <th>编号</th>
+                                        <th>标题</th>
+                                        <th>栏目</th>
+                                        <th>作者</th>
+                                        <th>浏览数</th>
+                                        <th>发布时间</th>
+                                        <th>更新时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                			<volist name='vlist' id='v'>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox"  class="i-checks" name="id[]" value="<{$v.id}>">
+                                        </td>
+                                          <td><{$v.id}></td>
+                                          
+                                      <td>
+									<{$v.news_title}>
+									<volist name='v.child' id='vo' offset="0" length='3'>
+										<span style="color:<{$vo.attr_color}>">[<{$vo.attr_name}>]</span>
+									</volist>
+									<if condition="$v['news_images']==1">
+									<span style="color:#4BB22D">[图片]</span>
+									</if>
+									</td>
+                                        <td><{$v.column_name}></td>
+                                        <td><{$v.news_author}></td>
+                                        <td><{$v.news_hits}></td>
+                                        <td><{$v.news_addtime|date='Y-m-d H:i:s', ###}></td>
+										<td><{$v.news_updatetime|date='Y-m-d H:i:s', ###}></td>
+                                        <td>
+                                        <a href="__URL__/edit/id/<{$v.id}>"><i class="fa fa-edit text-navy"></i></a>
+                                        <a  href="__URL__/do_trash/id/<{$v.id}>" onClick="return confirm('是否确定删除?')"><i class="fa fa-remove color-red"></i></a>
+                                        </td>
+                                    </tr>
+                                    </volist>
+                                </tbody>
+                            </table>
+                             </form>
+                        </div>     
+<div class="green-black"><{$page}>总共<{$count}>条记录</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <script src="__PUBLIC__/js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})
+            $('#checkBox').on('ifChecked', function(event){ //全选
+        		$('input').iCheck('check');
+        	});
+
+        	$('#checkBox').on('ifUnchecked', function(event){ //反选
+        		$('input').iCheck('uncheck');
+        	});
+        	$('#remove').click(function(){  //删除
+                if(confirm("确定要删除数据吗？"))
+                {
+                	document.form_do.submit();
+                }
+            	});
+
+        	$('#selColumn').change(function(){
+        		$("#form_sel").submit();
+            	});
+        	
+            });
+
+    </script>
+</body>
+
+</html>

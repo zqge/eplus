@@ -1,0 +1,90 @@
+<include file="Public:header" />
+<!-- 头部结束 -->
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>添加栏目</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post"  id="form1" action="<{:U('Column/do_add')}>"  class="form-horizontal m-t" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">父类栏目:</label>
+                                <div class="col-sm-5">
+                                    <select class="form-control m-b" name="parent_id">
+                                <option  value="0" >==顶级栏目==</option>
+                             	<volist name='cate' id='v'>
+							    <option <if condition="$pid eq $v['id']">selected="selected"</if>  value="<{$v.id}>" ><{$v.html}><{$v.column_name}></option>
+								</volist>
+                                    </select>
+                                </div>
+                            </div>
+                               <div class="form-group">
+                                <label class="col-sm-2 control-label">所属模型:</label>
+                                <div class="col-sm-5">
+                                    <select class="form-control m-b" name="model_id">
+                             	<volist name='Modellist' id='v'>
+							    <option <if condition="$modelId eq $v['id']">selected="selected"</if>  value="<{$v.id}>" ><{$v.model_name}></option>
+								</volist>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">栏目名称 ：</label>
+                                <div class="col-sm-5">
+                                    <input placeholder="请输入栏目中文名称" id="column_name" name="column_name" class="form-control" type="text" >
+                                </div>
+                            </div>
+                                   <div class="form-group">
+                                <label class="col-sm-2 control-label">栏目英文名称：</label>
+                                <div class="col-sm-5">
+                                    <input placeholder="请输入栏目英文名称" id="column_ename" name="column_ename" class="form-control" type="text" >
+                                </div>
+                            </div>
+                                      <div class="form-group">
+                                <label class="col-sm-2 control-label">栏目排序 ：</label>
+                                <div class="col-sm-5">
+                                    <input placeholder="请输入栏目排序" value='100' id="column_sort" name="column_sort" class="form-control" type="text" >
+                                </div>
+                            </div>
+ 							 <div class="form-group">
+                                <label class="col-sm-2 control-label">栏目说明：</label>
+                                <div class="col-sm-5">
+    								<textarea  placeholder="栏目说明" id="column_descr" name="column_descr"  class="form-control" rows="3"></textarea>
+                              
+                                </div>
+                            </div>
+                          
+                             
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-3">
+                                    <button class="btn btn-primary"  id="save"  type="submit">提交</button>
+                                     <input class="btn btn-primary"  type="button" name="return" value="返回" onclick="history.go(-1)">
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">   
+  <!--   
+        $(document).ready(function(){  
+            var v = $("#form1").validate({   //表单验证
+                rules:{   
+            	column_name:{required:true},   
+                },messages:{   
+                	column_name:{required:"栏目名称必须填写！"},   
+                }, submitHandler:function(form1){ 
+                	form1.submit(); 
+                	} 
+                });   
+        });
+  //-->   
+  </script>  
+</html>

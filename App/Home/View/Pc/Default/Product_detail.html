@@ -1,0 +1,50 @@
+<include file="Public:head" />
+<body id="con">
+<!-- nav -->
+<include file="Public:nav" />
+<!-- /nav -->
+<section id="show_cases">
+	<div class="wrapper">
+        <div id="overview">
+        	<form name="formsearch"   method="post"  action="__APP__/Search/result" id="search" style="position:absolute; top:0; right:278px; margin:0;">
+        	<input type="hidden" name="kwtype" value="0" />
+			<input type="text" name="keywords" id="keywords" autocomplete="off" value="在这里搜索..." required x-webkit-speech x-webkit-grammar="builtin:translate" lang="zh-CN"  />
+			<input type="submit" id="submit" value="搜 索" />
+        	</form>
+			<div class="overview_bg"></div>
+			<div id="case_info">
+                    <h1><img src="<{$v.product_pic}>" width="180" height="108" alt="<{$v.product_name}>" /></h1>
+					<ul>
+						<li>名称：<{$v.product_name}></li>
+						<li>分类：<{$v.column_name}></li>
+						<li>时间：<{$v.product_createtime|date='Y-m-d H:i:s',###}></li>
+						<li>关注：<{$v.product_hits}>次</li>
+					</ul>
+					<a href="<{$v.product_url}>" class="btn_blue" target="_blank" rel="external nofollow">VISIT SITE 访问该网站</a>
+					<div class="brief"><{$v.product_intro}></div>
+			</div>
+		</div>
+
+		<div id="detailed">
+<{$v.product_content}>
+		</div>
+	</div>
+    
+</section>
+
+<include file="Public:foot" />
+<script>
+//<![CDATA[
+		$("#keywords").focusin(function() {
+		  $(this).val()=="在这里搜索..."?$(this).val(""):false;
+		});
+		$("#keywords").focusout(function() {
+			$(this).val($(this).val());
+			$(this).val()==""?$(this).val("在这里搜索..."):false;
+		});
+		$("#info img").lazyload({effect:"fadeIn",failurelimit:10});
+
+//]]>
+</script>
+</body>
+</html>

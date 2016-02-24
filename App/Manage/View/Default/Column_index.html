@@ -1,0 +1,87 @@
+<include file="Public:header" />
+<!-- 头部结束 -->
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <!-- Panel Other -->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>栏目管理</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <!-- Example Events -->
+                        <div class="example-wrap">
+                            <div class="example">
+                                <div class="btn-group hidden-xs" id="exampleTableEventsToolbar" role="group">
+                                    <button onclick="window.open('__URL__/add','_self')"  type="button" class="btn btn-primary">
+										添加
+                                    </button>                                    
+                                </div>
+                                
+                                <table class="table table-condensed" data-toggle="table" id="exampleTableEvents" data-height="400" data-mobile-responsive="true">
+                                    <thead>
+                                        <tr>
+                                            <th  data-checkbox="true" data-field="check"></th>
+                                            <th data-field="id">id</th>
+                                            <th data-field="column_name">栏目中文名称</th>
+                                            <th data-field="column_ename">栏目英文名称</th>
+                                            <th data-field="column_pname">父级栏目</th>
+                                            <th data-field="column_level">栏目级别</th>      
+                                             <th data-field="model_name">栏目模型</th>
+                                            <th data-field="column_sort">栏目排序</th>
+                                             <th>操作</th>                              
+                                                                     
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                <volist name='vlist' id='v'>
+                                  <tr>
+                                  <td ><{$v.id}></td>
+                                   <td ><{$v.id}></td>
+                                  <td ><a href="__URL__/edit/id/<{$v.id}>"><{$v.column_name}></a></td>                                     
+                                    <td ><{$v.column_ename}></td>                                     
+                                    <td ><{$v.column_pname}></td>  
+                                    <td ><{$v.level}>级栏目</td>                                     
+                                    <td ><{$v.model_name}></td>                                     
+                                    <td ><{$v.column_sort}></td>        
+                                                  <td>
+                                     <a href="__URL__/add/id/<{$v.id}>">添加子栏目</a>|
+                                     <a href="__URL__/delete/id/<{$v.id}>" onClick="return confirm('是否确定删除栏目?')">删除栏目</a>
+                                        </td>                             
+                                    </tr>
+                                  </volist>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Example Events -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Other -->
+    </div>
+     <script type="text/javascript">
+
+     var $table = $('#exampleTableEvents');
+     var $remove = $('#remove');
+     $(function () {
+         $remove.click(function () {
+             var ids = $.map($table.bootstrapTable('getSelections'), function (row) {
+                    if(row.check==true){
+                    return row.id;
+                 }
+             });
+             if(confirm("确定要删除数据吗？"))
+             {
+             window.location = "delall/id/"+ids;
+             }
+         });
+         
+     });
+
+ </script>
+</body>
+
+</html>

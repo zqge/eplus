@@ -1,0 +1,8 @@
+﻿<div id="navl" >
+<span><a href="__APP__">首页</a> > 
+	 <volist name='clist' id='nav'>
+						<a href="<{$nav.url}>"><span><{$nav.column_name}></span></a>
+											<if condition="$i neq count($clist)">&gt;</if>	
+						</volist>
+</div>
+      

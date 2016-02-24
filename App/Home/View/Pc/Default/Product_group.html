@@ -1,0 +1,44 @@
+<include file="Public:head" />
+<body id="con">
+<!-- nav -->
+<include file="Public:nav" />
+<!-- /nav -->
+<section id="caseslist">
+
+	<div class="case_logo">
+	<!-- 
+    	<img src="/img/case_logo1.png" />
+    	<img src="/case_logo2.png" />
+    	<img src="/case_logo3.png" />
+    	 -->
+    </div>
+    
+<ul class="cases2 wrapper">
+   <volist name='productList' id='List'>
+	<li class="item1">
+        	<a href="<{$List.url}>" title="<{$List.product_name}>">
+			<img src="<{$List.product_pic}>" data-original="<{$List.product_pic}>" alt="<{$List.product_name}>" /></a>
+        	<p><{$List.product_intro}></p>
+        	<a href="<{$List.url}>"><strong><{$List.product_name}></strong>
+            </a>
+	</li>
+	 </volist>
+    <div class="clear"></div>
+</ul>
+</section>
+<include file="Public:foot" />
+<script>
+//<![CDATA[
+		$("#keywords").focusin(function() {
+		  $(this).val()=="在这里搜索..."?$(this).val(""):false;
+		});
+		$("#keywords").focusout(function() {
+			$(this).val($(this).val());
+			$(this).val()==""?$(this).val("在这里搜索..."):false;
+		});
+		$("#info img").lazyload({effect:"fadeIn",failurelimit:10});
+
+//]]>
+</script>
+</body>
+</html>

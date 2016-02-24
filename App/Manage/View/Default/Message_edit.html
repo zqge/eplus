@@ -1,0 +1,85 @@
+<include file="Public:header" />
+<!-- 头部结束 -->
+<body class="gray-bg">
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+
+            <div class="col-sm-12">
+          
+                <div class="social-feed-box">
+
+                    <div class="social-avatar">
+                        <a href="" class="pull-left">
+                            <img alt="image" src=" <{$v.user.image}>">
+                        </a>
+                        <div class="media-body">
+                            <a href="#">
+                                        <{$v.user.name}>
+                                    </a>
+                            <small class="text-muted"><{$v.mes_exp_addtime|date='Y-m-d H:i:s', ###}></small>
+                        </div>
+                    </div>
+                    <div class="social-body">
+                 <{$v.mes_exp_content}>
+                    </div>
+                    <div class="social-footer">
+                      <volist name='vlist' id='vl'>
+                        <div class="social-comment">                        
+                            <a href="" class="pull-left">
+                                <img alt="image" src="<{$vl.user.image}>">
+                            </a>
+                            <div class="media-body">
+                                <a href="#"><{$vl.user.name}></a> 
+                               <{$vl.mes_exp_content}>
+                                <br/>
+                                <small class="text-muted"><{$vl.mes_exp_addtime|date='Y-m-d H:i:s', ###}></small>
+                                 <a  href="__URL__/delete/id/<{$vl.id}>" onClick="return confirm('是否确定删除该回复?')"><i class="fa fa-trash-o "></i></a>
+                            </div>
+                        </div>
+                                    </volist>
+
+                        <form method="post"  id="form1" action="<{:U('Message/do_edit')}>"  class="form-horizontal m-t" enctype="multipart/form-data">
+                        <div class="social-comment">
+                            <a href="" class="pull-left">
+                                <img alt="image" src="<{$ad.image}>">
+                            </a>
+                            <div class="media-body">
+                                <textarea name='mes_exp_content' class="form-control" placeholder="填写回复..."></textarea>
+                            </div>
+                          
+                        </div>
+                    <div class="social-comment">
+                      <div class="col-sm-offset-4">
+                         <input type="hidden" name="mes_exp_pid" value="<{$v.mes_exp_pid}>" />		
+                        <input type="hidden" name="mes_exp_pid" value="<{$v.mes_exp_pid}>" />		
+                      
+                        <button class="btn btn-primary"  id="save"  type="submit">提交</button>
+                           <a  href="__URL__/index" class="btn btn-primary"  type="button" name="return">
+                          返回
+                          </a>
+                    </div>
+                    </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script type="text/javascript">   
+  <!--   
+        $(document).ready(function(){  
+            var v = $("#form1").validate({   //表单验证
+                rules:{   
+            	mes_exp_content:{required:true},   
+                },messages:{   
+                	mes_exp_content:{required:"回复必须填写!"},   
+                	
+                }, submitHandler:function(form1){ 
+                	form1.submit(); 
+                	} 
+                });   
+        });
+  //-->   
+  </script>  
+</body>
+
+</html>

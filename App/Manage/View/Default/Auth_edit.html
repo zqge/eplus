@@ -1,0 +1,60 @@
+<include file="Public:header" />
+<!-- 头部结束 -->
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>编辑权限规则</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post"  id="form1" action="<{:U('Auth/do_edit')}>"  class="form-horizontal m-t">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">title：</label>
+                                <div class="col-sm-8">
+                                    <input id="title" name="title" class="form-control" type="text" value="<{$v.title}>">
+                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 规则的注释名称</span>
+                                </div>
+                            </div>
+                          
+                          <div class="form-group">
+                                <label class="col-sm-3 control-label">name：</label>
+                                <div class="col-sm-8">
+                                    <input id="name" readonly name="name" class="form-control" type="text" value="<{$v.name}>">
+                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 规则名字</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-3">
+                                  <input id="id" name="id"  type="hidden" value="<{$v.id}>">
+                                    <button class="btn btn-primary"  id="save"  type="submit">提交</button>
+                                    <input class="btn btn-primary"  type="button" name="return" value="返回" onclick="history.go(-1)">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">   
+  <!--   
+  $(document).ready(function() {
+        var v = $("#form1").validate({   
+        rules:{   
+            title:{required:true},   
+            name:{required:true },   
+        },messages:{   
+        	title:{required:"规则的注释名称不能为空！"},   
+        	name:{required:"规则名字不能为空！" },   
+        }, submitHandler:function(form1){ 
+        	form1.submit(); 
+        	} 
+        });   
+    });   
+  //-->   
+  </script>  
+</html>

@@ -1,0 +1,188 @@
+<include file="Public:head" />
+<body id="index">
+<!-- nav -->
+<include file="Public:nav" />
+<!-- /nav -->
+<section id="banner">
+	<ul id="banner_img">
+   <volist name='indexImg' id='v'>
+  <li  <if condition="$v['block'] eq '1' ">style="display: block;"</if> >
+  <div class="wrapper">
+  <div class="ad_txt">
+  <{$v.page_summary}>
+  </div>
+  <div class="ad_img">
+  <a title="<{$v.page_title}>"  href="<{$v.page_url}>"  >
+  <img alt="<{$v.page_title}>" src="<{$v.page_pic}>">
+  </a>
+  </div>
+  </div>
+  </li>
+  </volist>
+  </ul>
+	<div id="banner_ctr">
+		<div id="drag_ctr"></div>
+	<ul>
+	   <volist name='indexImg' id='v'>
+  <li><{$v.page_title}></li>
+    </volist>
+ </ul>
+		<div id="drag_arrow"></div>
+	</div>
+</section>
+<section id="service">
+	<ul>
+		<li class="cur">
+			<a href="#" title="网站建设/网站设计">
+        	<h3 class="website">网站建设</h3>
+            <p>提供全方位一站式企业信息化解决方案，帮您建设属于自己的信息化平台。深入剖析企业需求，致力于树立良好的企业品牌形象，完善企业对内外的传播需求。积极协助企业找到发展战略核心，从战略的角度树立企业的品牌形象。</p>
+            </a>
+		</li>
+		<li>
+        <a href="#" title="微信公众平台开发"  >
+		<h3 class="weixin">微信 / 微站</h3>
+		<p>让您紧握移动互联网的脉搏，赢在微时代，公众平台搭配我们自己开发的后台如虎添翼，在保留公众平台所有的优势前提下，全方位的O2O解决方案，铸就新的传奇。</p>
+		</a>
+		</li>
+        <li>
+        <a href="#" title="网站推广/网站优化">
+<h3 class="seo">网站推广</h3>
+            <p>做完网站就够了吗？网站推广的意义等同于广告！成千上万的同行网站，让客户立刻找到你！点击免费，提高网站在所有搜索引擎的排名。</p>
+            </a>
+		</li>
+        <li class="arrow"></li>
+	</ul>
+</section>
+
+<section id="caseslist">
+	<ul class="cases">
+  <li><a title="E格科技网络公司建设成功案例" href="__APP__/Product/group/id/76"><img alt="E格科技网络公司建设成功案例" 
+  src="__PC__/img/icase_t.gif">
+  </a>
+  </li>
+     <volist name='productList' id='List'>
+  
+  <li class="item1"><img alt="<{$List.product_name}>" src="<{$List.product_pic}>" 
+  data-original="<{$List.product_pic}>">
+  <p><a title="<{$List.product_name}>" 
+  href="<{$List.url}>"><{$List.product_name}></a></p></li>
+  </volist>
+  </ul>
+</section>
+<section id="news">
+	<div class="newsdata">
+    <div class="questionlist">
+		<h2 class="cat_title"><span><a class="more" href="__APP__/News/group/id/73">more+</a></span>新闻中心</h2>
+<div class="clear"></div>
+<ul>
+   <volist name='newsList' id='List'>
+  <li>
+  <a title="<{$List.news_title}>" href="<{$List.url}>" 
+  target="_blank">· <{$List.news_title}></a>
+  </li>
+  </volist>
+  </ul>
+		</div>
+        <div id="newsbox">
+        <h2 class="cat_title"><span><a class="more" href="__APP__/News/group/id/75">more+</a></span>常见问题</h2> 
+		<ul>
+<volist name='cjwtList' id='List'>
+  <li>
+  	 <if condition="empty($List['news_pic'] )  neq true">
+  	   	<a href="<{$List.url}>" target="_blank"><img src="<{$List.news_pic}>"  width="90" ></a>
+										</if>	
+  <div class="newslist"><a title="<{$List.news_title}>" href="<{$List.url}>"><{$List.news_title}></a><span>uptated:<{$List.news_addtime|date='Y-m-d H:i:s',###}></span>
+  <p><{$List.news_description}></p>
+  </div>
+  </li>
+   </volist>
+  </ul>
+		</div>
+	</div>
+    <div class="clear"></div>
+</section>
+
+<include file="Public:foot" />
+<script type="text/javascript">
+//<![CDATA[
+	<!--- 首页 ---->
+	$('.ad_img,#banner_ctr,.logo').pngFix();
+	//Banner Start
+	var curIndex=0;
+	var time=800;
+	var slideTime=5000;
+	var adTxt=$("#banner_img>li>div>.ad_txt");
+	var adImg=$("#banner_img>li>div>.ad_img");
+	var int=setInterval("autoSlide()",slideTime);
+
+	$("#banner_ctr>ul>li[class!='first-item'][class!='last-item']").click(function(){
+		show($(this).index("#banner_ctr>ul>li[class!='first-item'][class!='last-item']"));
+		window.clearInterval(int);
+		int=setInterval("autoSlide()",slideTime);
+	});
+	
+	function autoSlide(){
+		curIndex+1>=$("#banner_img>li").size()?curIndex=-1:false;
+		show(curIndex+1);
+	}
+	function show(index){
+		$.easing.def="easeOutQuad";
+		$("#drag_ctr,#drag_arrow").stop(false,true).animate({left:index*24+6},300);
+		$("#banner_img>li").eq(curIndex).stop(false,true).fadeOut(time);
+		adTxt.eq(curIndex).stop(false,true).animate({top:"340px"},time);
+		adImg.eq(curIndex).stop(false,true).animate({right:"120px"},time);
+		setTimeout(function(){
+			$("#banner_img>li").eq(index).stop(false,true).fadeIn(time);
+			adTxt.eq(index).children("p").css({paddingTop:"50px",paddingBottom:"50px"}).stop(false,true).animate({paddingTop:"0",paddingBottom:"0"},time);
+			adTxt.eq(index).css({top:"0",opacity:"0"}).stop(false,true).animate({top:"110px",opacity:"1"},time);
+			adImg.eq(index).css({right:"-50px",opacity:"0"}).stop(false,true).animate({right:"10px",opacity:"1"},time);
+		},200)
+		curIndex=index;
+	}
+	//Banner End
+	//Cases Start
+	$("#caseslist>.cases>li").live({mouseenter:function(){
+		$("p",this).stop(false,true).slideDown("normal","easeOutQuad");
+		},mouseleave:function(){
+		$("p",this).stop(false,true).slideUp("normal","easeOutQuad");
+		}});
+	$("#caseslist>.cases>li>img,#newsbox>ul>li>a>img").lazyload({effect:"fadeIn",failurelimit:10});
+	//Cases End
+	//nav start
+	(function(){
+	var nav = $("#service ul");
+	var lis = nav.children("li");
+	var arrow = $(".arrow").css("left");
+	var speed = 300;
+	var n = 0;
+	//取cur位置
+	for(var i=0; i<lis.length; i++){
+		if(lis.eq(i).attr("class") == "cur"){
+			n = i;
+		}
+	}
+	lis.eq(0).hover(function(){
+		$(".arrow").stop(true, true).animate({left:"0px"}, speed);
+		lis.removeClass("cur");
+		$(this).addClass("cur");
+	})
+	lis.eq(1).hover(function(){
+		$(".arrow").stop(true, true).animate({left:"370px"}, speed);
+		lis.removeClass("cur");
+		$(this).addClass("cur");
+	})
+	lis.eq(2).hover(function(){
+		$(".arrow").stop(true, true).animate({left:"738px"}, speed);
+		lis.removeClass("cur");
+		$(this).addClass("cur");
+	})
+	nav.mouseleave(function(){
+		$(".arrow").stop(true, true).animate({left:arrow}, speed);
+		lis.removeClass("cur");
+		lis.eq(n).addClass("cur");
+	})
+}())
+//]]>
+</script>
+</body>
+</html>

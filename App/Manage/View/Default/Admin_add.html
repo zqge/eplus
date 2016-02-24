@@ -1,0 +1,96 @@
+<include file="Public:header" />
+<!-- 头部结束 -->
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>添加管理员</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="post"  id="form1" action="<{:U('Admin/do_add')}>"  class="form-horizontal m-t">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">用户名：</label>
+                                <div class="col-sm-8">
+                                    <input placeholder="请输入要添加的用户名" id="admin_name" name="admin_name" class="form-control" type="text" >
+                                    <span class="help-block m-b-none"><i class="fa fa-info-circle"></i> 用户名由4-12位数字_或者字母组成</span>                           
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">用户密码：</label>
+                                <div class="col-sm-8">
+                                    <input  placeholder="请输入密码"  id="admin_pass" name="admin_pass" class="form-control" type="password" >
+                                </div>
+                            </div>
+                                                      <div class="form-group">
+                                <label class="col-sm-3 control-label">再次确认密码：</label>
+                                <div class="col-sm-8">
+                                    <input   placeholder="请再次输入密码"  id="admin_repass" name="admin_repass" class="form-control" type="password" >
+                                </div>
+                            </div>
+                          
+                                     <div class="form-group">
+                                <label class="col-sm-3 control-label">真实姓名：</label>
+                                <div class="col-sm-8">
+                                    <input placeholder="请输入添加用户的姓名" id="admin_realname" name="admin_realname" class="form-control" type="text" >
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label class="col-sm-3 control-label">邮箱：</label>
+                                <div class="col-sm-8">
+                                    <input placeholder="请输入用户的邮箱" id="admin_email" name="admin_email" class="form-control" type="text" >
+                                </div>
+                            </div>    
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-3">
+                                    <button class="btn btn-primary"  id="save"  type="submit">提交</button>
+                                     <input class="btn btn-primary"  type="button" name="return" value="返回" onclick="history.go(-1)">
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">   
+  <!--   
+  $(document).ready(function() {
+        var v = $("#form1").validate({   
+        rules:{   
+        	admin_name:{required:true,
+        		rangelength:[4,12],
+            	remote: { 
+            	url: "check", //后台处理程序 
+            	type: "post", //数据发送方式 
+            	dataType: "json", //接受数据格式 
+            	data: { //要传递的数据 
+        	    admin_name: function() { 
+            	return $("#admin_name").val(); } 
+            	} 
+            	} 
+                }, 
+               admin_pass:{required:true},   
+               admin_repass:{required:true,equalTo: "#admin_pass"},   
+               admin_realname:{required:true},   
+               admin_email:{required:true,email:true},   
+                   
+        },messages:{   
+        	admin_name:{required:"用户名不能为空！",remote: "该用户名已经存在！",rangelength:"用户名长度应该在4-12之间" },   
+        	admin_pass:{required:"密码不能为空！"},   
+        	admin_repass:{required:"密码不能为空！",equalTo:"两次输入密码必须相同！"},   
+        	admin_realname:{required:"姓名不能为空！"},   
+        	admin_email:{required:"邮箱不能为空！",email:"请填写正确的邮件格式！"},   
+        	        	        	
+        }, submitHandler:function(form1){ 
+        	form1.submit(); 
+        	} 
+        });   
+    });   
+  //-->   
+  </script>  
+</html>

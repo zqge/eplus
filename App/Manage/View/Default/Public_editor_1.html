@@ -1,0 +1,23 @@
+               <!--  编辑器 -->
+                           <div class="ibox float-e-margins">
+                           <div class="ibox-content no-padding">
+                       	 <div class="summernote"></div> 
+                         <input  id="news_content" name="news_content" class="form-control" type="hidden" >
+                         </div>
+                         </div>
+                          <!--  编辑器 -->   
+						    <!-- 编辑器 -->
+    <script src="__PUBLIC__/js/plugins/summernote/summernote.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/summernote/summernote-zh-CN.js"></script>
+      <script>
+        $(document).ready(function(){
+            $(".summernote").summernote({
+                lang:"zh-CN",
+            	 height:200,
+            	 onChange:function(obj, content){ //定义内容变化回调方法
+                $('#news_content').val(content);
+              }
+                });
+            });
+    </script>
+   <!-- 编辑器 -->

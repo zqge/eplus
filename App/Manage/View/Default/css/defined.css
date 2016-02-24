@@ -1,0 +1,12 @@
+/***分页显示样式_开始***/
+div.green-black{text-align:center;}
+div.green-black a{border:#2c2c2c 1px solid;padding:2px 5px;background: #2c2c2c;color:#fff;margin:0 2px 0 0;text-decoration:none;}
+div.green-black a:hover{border:#1AB394 1px solid;background: #1AB394;color:#fff;}
+div.green-black a:active{border:#1AB394 1px solid;background:#1AB394;color:#fff;}
+div.green-black span.current{border:#1AB394 1px solid;padding:2px 5px;font-weight:bold;background: #1AB394;color:#fff;margin:0 2px 0 0;}
+div.green-black span.disabled{border:#f3f3f3 1px solid;padding:2px 5px;color:#ccc;margin:0 2px 0 0;}
+/***分页显示样式_结束***/     
+
+  /***颜色_开始***/
+  .color-red{ color: #ed5565;}
+    /***颜色_结束***/

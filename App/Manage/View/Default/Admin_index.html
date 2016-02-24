@@ -1,0 +1,109 @@
+<include file="Public:header" />
+<!-- 头部结束 -->
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <!-- Panel Other -->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>用户管理</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <!-- Example Events -->
+                        <div class="example-wrap">
+                            <div class="example">
+                                <div class="btn-group hidden-xs" id="exampleTableEventsToolbar" role="group">
+                                    <button onclick="window.open('__URL__/add','_self')"  type="button" class="btn btn-primary">
+										添加
+                                    </button>                                    
+                                    <button type="button" id="remove" class="btn btn-danger" >
+															删除                                 
+   									</button>
+            
+                                </div>
+                                
+                                <table class="table table-condensed" data-toggle="table" id="exampleTableEvents" data-height="400" data-mobile-responsive="true">
+                                    <thead>
+                                        <tr>
+                                            <th  data-checkbox="true" data-field="check"></th>
+                                            <th data-field="id">id</th>
+                                            <th data-field="admin_name">用户名</th>
+                                            <th data-field="admin_realname">姓名</th>
+                                             <th data-field="admin_login">登陆次数</th>
+                                             <th data-field="admin_email">邮箱</th>
+                                             <th data-field="admin_rsdate">注册时间</th>
+                                             <th data-field="admin_lock">是否锁定</th>
+                                             <th data-field="admin_auth">权限验证</th>      
+                                              <th>岗位</th>                              
+                                                                     
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                <volist name='vlist' id='v'>
+                                  <tr>
+                                  <td ><{$v.id}></td>
+                                   <td ><{$v.id}></td>
+                                  <td ><a href="__URL__/edit/id/<{$v.id}>"><{$v.admin_name}></a></td>                                     
+                                    <td ><{$v.admin_realname}></td>                                     
+                                    <td ><{$v.admin_login}></td>                                     
+                                    <td ><{$v.admin_email}></td>                                     
+                                    <td ><{$v.admin_rsdate|date='Y-m-d H:i:s', ###}></td>                                     
+                                     <td >
+                                     <if condition="$v['admin_lock'] ==1">
+                                     锁定
+                                     <else />
+                                     可用
+										</if>				
+                                     </td>
+                                        <td >
+                                     <if condition="$v['admin_auth'] ==0">
+                                     不开启
+                                     <else />
+											开启
+										</if>				
+                                     </td>
+                                    <td>
+                                  <if condition="$v['title'] ==null ">
+                                     <a class="btn btn-primary"   href="__URL__/addAuth/id/<{$v.id}>"   >授权</a>
+                                    <else />
+                                    <a   href="__URL__/addAuth/id/<{$v.id}>"   >	<{$v.title}> </a>
+								
+									</if>
+                                    </td>
+                                    </tr>
+                                  </volist>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Example Events -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Other -->
+    </div>
+     <script type="text/javascript">
+
+     var $table = $('#exampleTableEvents');
+     var $remove = $('#remove');
+     $(function () {
+         $remove.click(function () {
+             var ids = $.map($table.bootstrapTable('getSelections'), function (row) {
+                    if(row.check==true){
+                    return row.id;
+                 }
+             });
+             if(confirm("确定要删除数据吗？"))
+             {
+             window.location = "delall/id/"+ids;
+             }
+         });
+         
+     });
+
+ </script>
+</body>
+
+</html>
